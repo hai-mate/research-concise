@@ -1,24 +1,24 @@
 # ----
 # Site
 
-title: Hydra Template
-url: "https://proud-alligator.cloudvent.net"
-baseurl:
+title: Research Concise
+url: "https://hai-mate.github.io/research-concise/"
+# baseurl: "https://hai-mate.github.io/research-concise/"
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product marketing template for Jekyll.
+description: AI-Powered Research Assistant at Superhuman Speed.
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
-social:
-  name: Hydra Template
-  links:
-    - https://github.com/CloudCannon/hydra-jekyll-template
+  name: hai-mate
+  email: hai-mate@outlook.com
+  # twitter: # twitter username without the @ symbol
+# social:
+#   name: Hydra Template
+#   links:
+#     - https://github.com/CloudCannon/hydra-jekyll-template
 
 # -----
 # Build
