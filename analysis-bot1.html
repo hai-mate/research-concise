@@ -1,0 +1,314 @@
+---
+
+---
+<!-- Place this at the very start of your HTML file -->
+<div class="coming-soon-banner">
+  AI-powered Analysis Assistant <br> Coming Soon
+</div>
+<style>
+.coming-soon-banner {
+  width: 100vw;
+  text-align: center;
+  font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 1000;
+  padding: 0em 0 0em 0;
+  /* Gradient text styles */
+  background: none;
+  background-image: linear-gradient(230deg, #009dff, #01d696, #5100ff, #ff00d9);
+  background-size: 200% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-text-move 2s ease-in-out infinite alternate;
+  letter-spacing: 0.005em;
+}
+
+@keyframes gradient-text-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+
+.hero-title.cool-hover {
+  font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2.6em;
+  font-weight: 300;
+  color: #1a237e;
+  margin-bottom: 1.1em;
+  letter-spacing: 0.01em;
+  transition: color 0.2s, text-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.hero-title.cool-hover:hover {
+  color: #1a237e;
+  text-shadow: 0 4px 24px rgba(0,153,255,0.18), 0 1px 0 #fff;
+  transform: scale(1.04) skewX(0deg);
+}
+</style>
+
+
+
+<!-- Unified Overview Section -->
+<div class="overview-unified" style="background: linear-gradient(135deg, #e8f5e9 0%, #e3f2fd 100%); border-radius: 18px; box-shadow: 0 4px 24px 0 rgba(0, 153, 255, 0.08); max-width: 1100px; margin: 2.5em auto 2em auto; padding: 2.5em 2em 2em 2em;">
+  <div class="section-overview">
+    <div class="section-content" style="text-align:center;">
+      <p><strong>Automate insight extraction and analysis across multiple documents</strong> <br> just ask your question, and let the AI do the heavy lifting</p>
+    </div>
+  </div>
+  <div style="text-align:center; margin:1em 0 2em 0;">
+    <a href="/contact" class="get-started-btn">Get Started Free</a>
+  </div>
+  <div class="feature-section">
+    <div class="feature-heading">Unlock Instant Insights from Your Documents with AI</div>
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h3>Find What Matters Fast</h3>
+        <p>Quickly locate key information across your documents without manual searching.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Analyse Multiple Files Simultaneously</h3>
+        <p>Compare, summarise and extract insights from multiple documents in seconds.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Generate Actionable Insights Instantly</h3>
+        <p>Turn hours of reading into useful insights in moments using AI.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Instant Clarity</h3>
+        <p>Cut through the clutter with lightning-fast summaries that highlight exactly what you need to know. No noise—just the essentials.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Precision</h3>
+        <p>All answers come straight from your documents, with no AI hallucination. Reliable, fact-based, and always verifiable.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Citations at Your Fingertips</h3>
+        <p>Every insight is fully traceable. Clickable links show exactly where the answer came from—making validation quick and effortless.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Unified Overview Section -->
+
+<style>
+.get-started-btn {
+  display: inline-block;
+  background: #37de67;
+  color: #fff;
+  padding: 1em 2.5em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.4em;
+  font-weight: 400;
+  text-decoration: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.get-started-btn:hover {
+  background: #21893f; /* darker blue on hover */
+  text-decoration: none; /* no underline on hover */
+}
+</style>
+
+<style>
+  .emphasize-big {
+    font-size: 1.5em;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0.2em 0;
+    color: #1a237e;
+  }
+  .feature-section {
+    margin: 2.5em 0 2em 0;
+  }
+  .feature-heading {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #240337;
+  }
+  .feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+  }
+  .feature-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,153,255,0.13);
+    padding: 2em 1.5em 1.5em 1.5em;
+    min-width: 220px;
+    max-width: 420px;
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1.5px solid #0099ff22;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 0;
+    z-index: 1;
+  }
+  .feature-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 12px 36px rgba(0,153,255,0.22);
+    background: #f6fbff;
+  }
+  .feature-card h3 {
+    font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    font-size: 1.15em;
+    color: #0099ff;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    z-index: 1;
+  }
+  .feature-card p {
+    margin: 0;
+    color: #00334d;
+    font-size: 1em;
+    line-height: 1.6;
+    z-index: 1;
+  }
+  .button.alt {
+  background: #4182e4 !important;
+  color: #ffffff !important;
+  border: none;
+}
+.button.alt a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+</style>
+
+<style>
+    .content {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-overview, .section-workflow {
+        padding: 2em 0;
+    }
+
+    .section-content {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+
+    h1, h2 {
+        color: #1a237e;
+        margin-bottom: 1.5em;
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .workflow-steps {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        padding: 2em;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        list-style-type: none;
+        counter-reset: workflow-counter;
+    }
+
+    .workflow-steps li {
+        position: relative;
+        margin-bottom: 1.5em;
+        padding: 1.2em 1.5em 1.2em 3.5em;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        font-size: 1.2em;
+        line-height: 1.8;
+        color: #2c3e50;
+        border-left: 4px solid #4182e4;
+    }
+
+    .workflow-steps li:before {
+        content: counter(workflow-counter);
+        counter-increment: workflow-counter;
+        position: absolute;
+        left: 1em;
+        color: #4182e4;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+
+    .workflow-steps li:hover {
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(65, 130, 228, 0.1);
+    }
+
+    .workflow-steps li:last-child {
+        margin-bottom: 0;
+    }
+
+    .system-description {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 2em;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        font-size: 1.2em;
+        line-height: 1.8;
+        color: #2c3e50;
+    }
+
+    .agent {
+        display: inline-block;
+        padding: 2px 8px;
+        margin: 0 2px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    .agent.analyzer {
+        color: #e67e22;
+        background: rgba(230, 126, 34, 0.1);
+        border-bottom: 2px solid #e67e22;
+    }
+
+    .agent.processor {
+        color: #9b59b6;
+        background: rgba(155, 89, 182, 0.1);
+        border-bottom: 2px solid #9b59b6;
+    }
+
+    .agent.visualizer {
+        color: #16a085;
+        background: rgba(22, 160, 133, 0.1);
+        border-bottom: 2px solid #16a085;
+    }
+
+    .hero-orange {
+  color: #e67e22;
+  background: #fff4e6;
+}
+.hero-teal {
+  color: #008080;
+  background: #e6f9f9;
+}
+.hero-blue2 {
+  color: #005fa3;
+  background: #e6f0fa;
+}
+</style>

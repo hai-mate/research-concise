@@ -1,0 +1,19 @@
+- links:
+  - name: PRODUCTS
+    is_title: true
+  - name: Research-Bot
+    link: /research-bot1/
+  - name: Analysis-Bot
+    link: /analysis-bot1/
+- links:
+  - name: CONTACT US
+    is_title: true
+  - name: hai.mate@outlook.com
+    link: mailto:hai.mate@outlook.com
+- links:
+  - name: SOCIAL
+    is_title: true
+  - name: GitHub
+    link: https://github.com/Sara-Tan
+    new_window: true
+    social_icon: GitHub
