@@ -1,0 +1,16 @@
+- name: About Us
+  link: /about_us/
+  new_window: false
+  highlight: false
+- name: Research-Bot
+  link: /research-bot1/
+  new_window: false
+  highlight: false
+- name: Analysis-Bot
+  link: /analysis-bot1/
+  new_window: false
+  highlight: false
+- name: Contact Us
+  link: /contact/
+  new_window: false
+  highlight: false
