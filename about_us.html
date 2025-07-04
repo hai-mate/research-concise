@@ -46,7 +46,7 @@ title:
 			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
 			<div class="name">
   {% if person.link %}
-    <a href="{{ person.link }}" class="sara-tan-link">{{ person.name }}</a>
+    <a href="..{{ person.link }}" class="sara-tan-link">{{ person.name }}</a>
   {% else %}
     {{ person.name }}
   {% endif %}
