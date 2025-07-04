@@ -38,20 +38,18 @@ title:
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
 
 
-.feature-heading-hover {
-  font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 2.6em;
-  font-weight: 300;
-  color: #1a237e;
-  margin-bottom: 1.1em;
-  letter-spacing: 0.01em;
-  transition: color 0.2s, text-shadow 0.2s, transform 0.2s;
-  cursor: pointer;
-}
-.feature-heading:hover {
-  color: #1a237e;
-  text-shadow: 0 4px 24px rgba(0,153,255,0.18), 0 1px 0 #fff;
-  transform: scale(1.04) skewX(0deg);
+.feature-heading {
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5em;
+  background: linear-gradient(90deg, #ff9900, #ff00d9, #009dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  transition: background 0.2s, color 0.2s;
 }
 </style>
 
@@ -82,12 +80,14 @@ title:
 </style>
 <div class="overview-unified">
   <div class="section-overview">
-    <div class="section-content" style="text-align:center;">
-      <p>Effortlessly discover the most relevant academic papers from <strong>over 120 million publications</strong>. <br>Say <span class="hero-strong hero-orange">goodbye to manual searching</span> and <span class="hero-strong hero-blue2">hello to confident, evidence-based insights</span>.</p>
+    <div class="section-content" style="text-align:center; font-weight:500;">
+      <p style="font-weight:500;">Effortlessly discover the most relevant academic papers from <strong>over 120 million publications</strong>. <br>Say <span class="hero-strong hero-orange">Goodbye to manual searching</span> and <span class="hero-strong hero-blue2">Hello to confident, evidence-based insights</span>.</p>
     </div>
   </div>
-  <div style="text-align:center; margin:2em 0 2em 0;">
+  <div style="margin:2em 0 2em 0; width:100%; display: flex; justify-content: center; align-items: center; gap: 2.5em;">
+    <img src="/images/bluebot.png" alt="Blue Bot Icon" class="jump-bot" style="height:5.2em; width:auto; vertical-align:middle; display:inline-block;">
     <a href="/contact" class="get-started-btn">Get Started Free</a>
+    <img src="/images/pinkbot.png" alt="Purple Bot Icon" class="jump-bot" style="height:5.2em; width:auto; vertical-align:middle; display:inline-block;">
   </div>
   <div style="width:100%;max-width:1800px;margin:2em auto 2em auto;display:flex;justify-content:center;">
     <video src="{{ site.baseurl }}/images/My Movie 2.mp4" width="100%" style="max-width:100%;min-width:320px;border-radius:18px;box-shadow:0 8px 32px rgba(0,0,0,0.13);aspect-ratio:16/9;border: 2.5px solid #b3d6f6; background: #fff;" autoplay loop muted playsinline></video>
@@ -96,7 +96,7 @@ title:
     <div class="feature-heading">Uncover Key Scientific Papers in Seconds with AI</div>
     <div class="feature-cards">
       <div class="feature-card">
-        <h3>Scan Millions of Papers in Seconds</h3>
+        <h3>Scan Millions of Papers</h3>
         <p>Search across 120+ million publications and get precise results that match your research needs.</p>
       </div>
       <div class="feature-card">
@@ -158,10 +158,16 @@ title:
   }
   .feature-heading {
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 1.5em;
-    color: #1a237e;
+    background: linear-gradient(90deg, #ff9900, #ff00d9, #009dff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+    transition: background 0.2s, color 0.2s;
   }
   .feature-cards {
     display: flex;
@@ -197,10 +203,10 @@ title:
     margin-top: 0;
     margin-bottom: 0.7em;
     font-size: 1.15em;
-    color: #0099ff;
-    font-weight: 400;
+    color: #1525d1;
     letter-spacing: 0.02em;
     z-index: 1;
+    font-weight: 500;
   }
   .feature-card p {
     margin: 0;
@@ -208,6 +214,7 @@ title:
     font-size: 1em;
     line-height: 1.6;
     z-index: 1;
+    font-weight: 400;
   }
 
 </style>
@@ -227,6 +234,7 @@ title:
         max-width: 1000px;
         margin: 0 auto;
         padding: 0 10px;
+        font-weight: 500;
     }
 
 
@@ -327,4 +335,30 @@ title:
   color: #005fa3;
   background: #e6f0fa;
 }
+</style>
+
+<style>
+  .tilt-bot {
+    display: inline-block;
+    animation: tilt-bot-oscillate 2.2s infinite ease-in-out;
+    transform-origin: 50% 80%;
+  }
+  @keyframes tilt-bot-oscillate {
+    0% { transform: rotate(-360deg); }
+    50% { transform: rotate(360deg); }
+    100% { transform: rotate(-360deg); }
+  }
+  .jump-bot {
+    display: inline-block;
+    animation: jump-bot-updown 1.2s infinite cubic-bezier(.6,0,.4,1);
+    vertical-align: middle;
+  }
+  @keyframes jump-bot-updown {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(-18px); }
+    40% { transform: translateY(0); }
+    60% { transform: translateY(-12px); }
+    80% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+  }
 </style>

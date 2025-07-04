@@ -36,7 +36,7 @@ title:
 </style>
 
 <div class="team-desription" style="text-align:center;">
-	 <p>We're a powerhouse team blending technical depth and domain insight to build transformative AI tools for the future of research</p>
+     <p style="font-weight:500;color:#1a237e;">We're a powerhouse team blending technical depth and domain insight to build transformative AI tools for the future of research</p>
 </div>
 
 <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
@@ -44,10 +44,13 @@ title:
 	{% for person in site.staff_members %}
 		<li>
 			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
-			<div class="name"
-				{% if person.name == 'Sara Tan' or person.name == 'Weijie Tan' %} style="color:#1a237e;"{% endif %}>
-				{{ person.name }}
-			</div>
+			<div class="name">
+  {% if person.link %}
+    <a href="{{ person.link }}" class="sara-tan-link">{{ person.name }}</a>
+  {% else %}
+    {{ person.name }}
+  {% endif %}
+</div>
 			<div class="position">{{ person.position }}</div>
 			{% if person.blurb %}
 			  <div class="blurb">{{ person.blurb }}</div>
@@ -161,7 +164,7 @@ title:
 .vision-quote {
   font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
   color: #00334d;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.1em;
   line-height: 1.5;
   margin: 0;
@@ -234,7 +237,8 @@ title:
   font-size: 1.05em;
   line-height: 1.7;
   margin-top: 0.2em;
-  color: #080808;
+  color: #00334d;
+  font-weight: 400;
 }
 
 .vision-mission-icon-col img {
@@ -249,5 +253,17 @@ title:
   margin: 0 auto;
 }
 
+/* Sara Tan staff link hover effect */
+.sara-tan-link {
+  color: #1525d1 !important;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+  cursor: pointer;
+}
+.sara-tan-link:hover, .sara-tan-link:focus {
+  color: #ff00d9 !important;
+  text-shadow: 0 0 8px #ff00d978, 0 0 2px #ff00d979;
+  text-decoration: none;
+}
 
 </style>

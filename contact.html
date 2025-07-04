@@ -6,16 +6,16 @@
 
 <div class="contact-highlights-oval">
   <span class="highlight-oval">
-    <span class="highlight-oval-text">Build with Us</span>
-    <span class="highlight-hover-text">Join us in building cutting-edge AI tools!</span>
+    <span class="highlight-oval-text">Build Your Own AI Tool</span>
+    <span class="highlight-hover-text">Join our hands-on workshop and learn to create AI tools from scratch!</span>
   </span>
   <span class="highlight-oval">
     <span class="highlight-oval-text">Custom Agentic AI Development</span>
     <span class="highlight-hover-text">We build tailored AI solutions for your needs.</span>
   </span>
   <span class="highlight-oval">
-    <span class="highlight-oval-text">Build Your Own AI Tool</span>
-    <span class="highlight-hover-text">Join our hands-on workshop and learn to create AI tools from scratch.</span>
+    <span class="highlight-oval-text">Join The Mission</span>
+    <span class="highlight-hover-text">Join our team to create cutting-edge AI tools that shape the future!</span>
   </span>
   <span class="highlight-oval">
     <span class="highlight-oval-text">More Questions?</span>
@@ -23,7 +23,7 @@
   </span>
 </div>
 
-<h2 style="text-align:center; margin-top:2.5em;">Contact Us Directly</h2>
+<div class="contact-heading-banner1">Contact Us Directly</div>
 <p style="display:flex; align-items:center; justify-content:center; gap:0.6em; text-align:center; font-size:1.13em; font-weight:500;">
   <span class="contact-icon" aria-label="Email" title="Email">
     <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke= "#ff9900 " stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;">
@@ -61,6 +61,24 @@
     background-position: 100% 50%;
   }
 }
+.contact-heading-banner1 {
+  width: 100%;
+  text-align: center;
+  font-family: 'San Francisco', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  padding: 0em 0 0em 0; /* Reduced top and bottom padding */
+  margin-top: 0; /* Remove any default margin */
+  background: none;
+  background-image: linear-gradient(230deg, #009dff, #01d696, #5100ff, #ff00d9);
+  background-size: 200% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-text-move 2s ease-in-out infinite alternate;
+  letter-spacing: 0.005em;
+}
 .simple-contact-info {
   max-width: 500px;
   margin: 2.5em auto 0 auto;
@@ -84,7 +102,7 @@
 .simple-contact-info h2 {
   color: #201f1f;
   font-size: 1.6em;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1.2em;
   letter-spacing: 0.01em;
 }
@@ -145,8 +163,8 @@
   box-shadow: 0 4px 24px rgba(0,153,255,0.13);
   padding: 1.2em 2em 1.2em 2em;
   font-size: 1.2em;
-  font-weight: 350;
-  color: #0099ff;
+  font-weight: 500;
+  color: #1525d1;
   border: 1.5px solid #0099ff2b;
   width: 48%;
   /* max-width: 48%; */
@@ -181,10 +199,10 @@
 }
 .highlight-hover-text {
   display: none;
-  color: #0099ff;
+  color: #620db7;
   font-size: 1em;
   margin-top: 0.7em;
-  font-weight: 300;
+  font-weight: 400;
   background: #ffffff;
   border-radius: 10px;
   padding: 0.5em 1em;
@@ -236,6 +254,7 @@
   filter: drop-shadow(0 0 1px #ffb300bb) drop-shadow(0 0 3px #ffe100);
   border-radius: 50%;
   transition: filter 0.2s, transform 0.2s;
+  animation: mailbox-wiggle 0.7s infinite;
 }
 @keyframes mailbox-wiggle {
   0% { transform: rotate(-10deg); }
@@ -250,5 +269,18 @@
   filter: drop-shadow(0 0 2px #ffb300bb) drop-shadow(0 0 5px #ffe100);
   transform: scale(1.08);
 }
-</style>
 
+/* Contact Us Directly heading theme from research-bot1.html */
+.contact-direct-heading {
+   font-size: 2em;
+   font-weight: 500;
+   text-align: center;
+   margin-bottom: 1.5em;
+   background: linear-gradient(90deg, #ff9900, #ff00d9, #001eff);
+   color: transparent;
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: background 0.2s, color 0.2s;
+}
+</style>
